@@ -186,20 +186,7 @@ a img{
   background-size: cover;
 }
 
-.logo-font {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  line-height: 1;
-  color: rgba(24,101,137, 0.8);;
-//  color: rgba(255, 255, 255, 1);  
-  font-weight: 10000;
-}
-.weit-font {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  line-height: 1;
 
-  color: rgba(255, 255, 255, 1);  
-  font-weight: 10000;
-}
 .android-slogan {
   font-size: 48px;
   padding-top: 400px;
@@ -562,9 +549,47 @@ a img{
 /*
 
 ------------------------------------------------------------------
-
-
 */
+.tvm-be-together-section {
+  position: relative;
+  height: 500px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('../images/baner2.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: rgba(24,101,137, 1);;
+  
+  font-weight: 10000;
+}
+.weit-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+
+  color: rgba(255, 255, 255, 1);  
+  font-weight: 10000;
+}
+.black-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+
+  color: rgba(0, 0, 0, 1);  
+  font-weight: 10000;
+}
+
+.site-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+
+  color: rgba(24,101,137, 1);  
+  font-weight: 10000;
+}
+
+
 .mdl-layout__header--tvm {
   overflow: visible;
   background-color: white;
@@ -640,7 +665,7 @@ a img{
   background-color: #f3f3f3;
   background-size: cover;
 }
-.tvm-be-together-section {
+.tvm-be-together-section_ {
 float:left;
 width:100%;
 margin-left 
@@ -739,8 +764,8 @@ margin-left
 
 
 .tvm-logo-image {
-  height: 46px;
-  width: 175px;
+  height: 60px;
+  width: 200px;
 }
 
 
@@ -783,8 +808,31 @@ margin-left
   background-color: rgba(24,101,137,0.9);
   color: #fff;	
 }
-.int-section-title{
+.tvm-section-title{
+  margin-top: 40px;
 	text-align: center;	
+}
+
+.tvm-accounting{
+
+  background: url('../images/accounting.jpg')  center center no-repeat ;
+  background-size: cover;
+}
+.tvm-colsalting{
+
+  background: url('../images/colsalting.jpg')  center center no-repeat ;
+  background-size: cover;
+}
+.tvm-business{
+
+  background: url('../images/business.jpg')  center center no-repeat ;
+  background-size: cover;
+}
+
+.tvm-jurist{
+
+  background: url('../images/jurist.jpg')  center center no-repeat ;
+  background-size: cover;
 }
 .int-new-1 {
   position: relative;
@@ -812,13 +860,26 @@ margin-left
   position: relative;
   height: 400px;
   width: auto;
+  opacity: 0.7;
   background-color: #f3f3f3;
 
   background-size: cover;
-  margin-left: 4px;
-  margin-top: 4px;
+
     color: #000;
 }
+.int-new-3:hover{
+  position: relative;
+  height: 400px;
+  width: auto;
+  opacity: 0.9;
+//  background-color: #f3f3f3;
+  background-color: #fff;
+  background-size: cover;
+
+    color: #000;
+}
+
+
 .int-new-date {
   font-size: 24px;
   padding-top: 20px;
@@ -857,7 +918,11 @@ margin-left
   text-align: center;
 
 }
+.tvm-radio{
+  display: inline-block;
 
+  margin-right: 20px;
+}
 .mdl-cell.mdl-cell--5-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone.mdl-card.mdl-shadow--3dp.int_into_box{
   display: inline-block;
   flex-direction: row;
@@ -878,9 +943,24 @@ margin-left
 //    margin: 0 auto;
     margin: 0 16px;
     padding-top: 48px;
-	font-weight: 300;
+	font-weight: 400;
 	
   }
+.tvm-service {
+//	display: inline-block;
+    font-size: 24px;
+	text-align: center;
+//    margin: 0 auto;
+    margin: 0 6px;
+    padding-top: 60px;
+	font-weight: 400;
+	
+  }
+.tvm-calc__metod{
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 20px;
+}
 .tvm-calc{
 	position: relative;
 	height: 400px;
@@ -898,7 +978,7 @@ margin-left
 	
 }
 
-.diapason {
+.tvm-diapason {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -908,7 +988,7 @@ margin-left
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 h1 {
     font-size: 56px;
@@ -919,11 +999,12 @@ h1 {
 }
 h2 {
     font-size: 32px;
-	color: rgb(24,101,137);
-	font-weight: 500;
+//	color: rgb(24,101,137);
+//color: rgb(0,0,0);
+	font-weight: 400;
     line-height: 1.35;
     letter-spacing: -.02em;
-    margin: 0 20px;
+//    margin: 0 20px;
 }
 @media (max-width: 900px) {
   .int-section-title {
