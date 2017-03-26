@@ -697,8 +697,8 @@ a img {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 1%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .tvm-disk {
@@ -867,11 +867,18 @@ a img {
     background-size: cover;
 }
 
+.tvm-footer {
+    background-color: rgba(12, 51, 68, 1);
+}
+
 
 /**** Mobile layout ****/
 
 @media (max-width: 900px) {
     .mdl-navigation--tvm {
+        display: none;
+    }
+    .tvm-carousel-wrapper {
         display: none;
     }
     .tvm-title {
@@ -883,6 +890,9 @@ a img {
         left: calc(50% - 70px);
         //    top: 12px;
         transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .tvm-footer {
+        display: none;
     }
     /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
      consecutive "+" operators in some cases. Therefore, we need to use both
@@ -1220,6 +1230,7 @@ a img {
     text-align: center;
     font-size: 36px;
     font-weight: 400;
+    line-height: 1.1;
 }
 
 .tvm-calc {
@@ -1243,10 +1254,24 @@ a img {
     color: #000;*/
 }
 
-.tvm-calc--elm {
+.tvm-calc--elements {
     min-height: 30px;
     padding: 10px;
     margin: 0px;
+}
+
+.tvm-calc--element {
+    display: block;
+    min-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.tvm-checkbox {
+    min-height: 24px;
+    height: auto;
 }
 
 .tvm-calc__result {
@@ -1285,7 +1310,7 @@ a img {
     justify-content: space-between;
     margin-top: 0px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 16px;
 }
 

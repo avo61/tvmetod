@@ -36,7 +36,7 @@
         <div class=" mdl-layout__header  mdl-layout__header--waterfall  mdl-layout__header--tvm ">
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title  tvm-title ">
-            		<img class="tvm-logo-image" src="images/logo.png">
+            		<a href="#top"><img class="tvm-logo-image" src="images/logo.png"></a>
 		  		</span>
 
                 <div class=" mdl-layout-spacer"></div>
@@ -271,9 +271,9 @@
                                     <span id="cnt-doc">50</span>
                                 </div>
                                 <div class="tvm-calc--service-slider ">
-                                    <input id="cntDoc" class="mdl-slider mdl-js-slider " type="range" min="10" max="499" value="50" tabindex="0">
+                                    <input id="cntDoc" class="mdl-slider mdl-js-slider " type="range" min="1" max="500" value="50" tabindex="0">
                                     <div class="tvm-diapason ">
-                                        <span>10</span>
+                                        <span>1</span>
                                         <span>100</span>
                                         <span>200</span>
                                         <span>300</span>
@@ -288,9 +288,9 @@
                                     <span id="cnt-cnt">50</span>
                                 </div>
                                 <div class="tvm-calc--service-slider ">
-                                    <input id="cntOper" class="mdl-slider mdl-js-slider " type="range" min="10" max="499" value="50" tabindex="0">
+                                    <input id="cntOper" class="mdl-slider mdl-js-slider " type="range" min="1" max="500" value="50" tabindex="0">
                                     <div class="tvm-diapason ">
-                                        <span>10</span>
+                                        <span>1</span>
                                         <span>100</span>
                                         <span>200</span>
                                         <span>300</span>
@@ -305,7 +305,7 @@
                                     <span id="cnt-usr">5</span>
                                 </div>
                                 <div class="tvm-calc--service-slider ">
-                                    <input id="cntUser" class="mdl-slider mdl-js-slider " type="range" min="1" max="99" value="5" tabindex="0">
+                                    <input id="cntUser" class="mdl-slider mdl-js-slider " type="range" min="1" max="100" value="5" tabindex="0">
                                     <div class="tvm-diapason ">
                                         <span>1</span>
                                         <span>10</span>
@@ -321,26 +321,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tvm-calc--service ">
-                                <span>Надбавка к базовой стоимости</span>
-                            </div>
                             <div class="tvm-calc--elm ">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-1">
-                                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input "value="1.20">
-                                <span class="mdl-checkbox__label ">Совмещение ОСН с ЕНВД (УСН с ЕНВД)</span>
-                            </label>
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-2">
-                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input "value="1.15">
-                                <span class="mdl-checkbox__label ">Наличие налогооблагаемого имущества на балансе организации</span>
-                            </label>
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-3">
-                                <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input "value="1.20">
-                                <span class="mdl-checkbox__label ">Одновременное осуществление операций с НДС и без НДС (с разными ставками НДС)</span>
-                            </label>
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-4">
-                                <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" value="1.20">
-                                <span class="mdl-checkbox__label ">Наличие разных видов деятельности</span>
-                            </label>
+                                <div class="tvm-calc--service ">
+                                    <span>Надбавка к базовой стоимости</span>
+                                </div>
+                                <div class="tvm-calc--elements ">
+                                    <div class="tvm-calc--element">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect tvm-checkbox " for="checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input "value="1.20">
+                                        <span class="mdl-checkbox__label ">Совмещение ОСН с ЕНВД (УСН с ЕНВД)</span>
+                                      </label>
+                                    </div>
+                                    <div class="tvm-calc--element">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect tvm-checkbox" for="checkbox-2">
+                                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input "value="1.15">
+                                        <span class="mdl-checkbox__label ">Наличие налогооблагаемого имущества на балансе организации</span>
+                                    </label>
+                                    </div>
+                                    <div class="tvm-calc--element">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect tvm-checkbox" for="checkbox-3">
+                                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input "value="1.20">
+                                        <span class="mdl-checkbox__label ">Одновременное осуществление операций с НДС и без НДС (с разными ставками НДС)</span>
+                                    </label>
+                                    </div>
+                                    <div class="tvm-calc--element">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect tvm-checkbox " for="checkbox-4">
+                                    <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" value="1.20">
+                                        <span class="mdl-checkbox__label ">Наличие разных видов деятельности</span>
+                                    </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -370,7 +380,7 @@
             <div class="tvm-map-section ">
 
                 <div class="tvm-new-section ">
-                    <div class=" mdl-grid mdl-grid--no-spacing ">
+                    <div class=" mdl-grid  ">
                         <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--8-col-phone ">
                             <h2>Контактная информация </h2>
                             <p class="material-icons tvm-icon ">location_on</p><span class="tvm-solid ">Наш адрес:</span><br> 394000. Воронеж, ул Героев Красной Армии, 6<br> оф. 301 (3 этаж)<br>
@@ -394,7 +404,7 @@
             </div>
 
 
-            <footer class="android-footer mdl-mega-footer ">
+            <footer class="tvm-footer mdl-mega-footer ">
                 <div class="mdl-mega-footer--top-section ">
                     <div class="mdl-mega-footer--left-section ">
                         <button class="mdl-mega-footer--social-btn "></button> &nbsp;
@@ -492,7 +502,7 @@
                     deltaBaner = -1;
             }
 
-        }, 10000);
+        }, 50000);
 
         radioSelectCarousel1.addEventListener("click", function(event) {
             // event.preventDefault();
@@ -602,13 +612,15 @@
 
         docCount.addEventListener("mouseup", eventCheck);
         docCount.addEventListener("mousedown", eventCheck);
+        docCount.addEventListener("mousemove", eventCheck);
 
         operCount.addEventListener("mouseup", eventCheck);
         operCount.addEventListener("mousedown", eventCheck);
+        operCount.addEventListener("mousemove", eventCheck);
 
         userCount.addEventListener("mouseup", eventCheck);
         userCount.addEventListener("mousedown", eventCheck);
-        // userCount.addEventListener("mousedown", mouseenter);
+        userCount.addEventListener("mousemove", eventCheck);
 
 
         eventCheck();
@@ -654,6 +666,10 @@
                 d3 = userCnt * 1 + 10 - ((userCnt % 10) ? userCnt % 10 : 10);
             };
 
+            docCount.value = d1;
+            operCount.value = d2;
+            userCount.value = d3;
+            userCount.innerHTML = "";
             s = metod[nn + forma] + d1 * 100 + d2 * 100 + d3 * 300;
 
             n1 = checkbox1.checked * checkbox1.value;
