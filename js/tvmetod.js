@@ -188,6 +188,18 @@
         userCount.addEventListener("mousedown", eventCheck);
         userCount.addEventListener("mousemove", eventCheck);
 
+        docCount.addEventListener("touchstart", eventCheck);
+        docCount.addEventListener("touchend", eventCheck);
+        docCount.addEventListener("touchmove", eventCheck);
+
+        operCount.addEventListener("touchstart", eventCheck);
+        operCount.addEventListener("touchend", eventCheck);
+        operCount.addEventListener("touchmove", eventCheck);
+
+        userCount.addEventListener("touchstart", eventCheck);
+        userCount.addEventListener("touchend", eventCheck);
+        userCount.addEventListener("touchmove", eventCheck);
+
 
         eventCheck();
 
@@ -270,7 +282,8 @@
             document.querySelector('#cnt-doc').innerHTML = d1;
             document.querySelector('#cnt-cnt').innerHTML = d2;
             document.querySelector('#cnt-usr').innerHTML = d3;
-            summa.innerHTML = s.toString(10).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            summa.innerHTML = s.toString(10).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + "<sup>*</sup>";
 
             // console.log(radioValue, docCnt, userCnt);
+
         }
